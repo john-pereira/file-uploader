@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 15px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #d1f2f2;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: #d1f2f2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #d1f2f2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #1f4848;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #1e4646;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #1e4646;
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #307474;
+    
+
+    .wrapper{
+        width: 430px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+
+        header h1{
+            color: #307474;
+            font-size: 27px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        form{
+            height: 167px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+            border: 2px dashed #307474;
+        }
+
+        form :where(i, p){
+            color: #307474;
+        }
+
+        form i {
+            font-size: 50px;
+        }
+
+        form p{
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        section {
+            
+            .row{
+                background-color: #d1f2f2;
+                margin-bottom: 10px;
+                list-style: none;
+                padding: 15px 20px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                i{
+                    font-size: 30px;
+                    color: #307474;
+                }
+            }
+
+            .details span{
+                font-size: 14px;
+            }
+
+            
+        }
+
+        .progress-area{
+
+            .row{
+                
+                .content{
+                    width: 100%;
+                    margin-left: 15px;
+
+                    .progress-bar{
+                        height: 6px;
+                        width: 100%;
+                        background: #fff;
+                        margin-bottom: 4px;
+                        border-radius: 30px;
+
+                        .progress{
+                            height: 100%;
+                            width: 50%;
+                            background: #1f4848;
+                            border-radius: inherit;
+                        }
+                    }
+                }
+    
+                .details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 7px;
+
+                    
+                }
+
+            }
+
+           
+        }
+
+        .uploaded-area {
+            max-height: 130px;
+            overflow-y: scroll;
+
+            .content{
+                display: flex;
+                align-items: center;
+            }
+            .row {
+
+                .details{
+                    display: flex;
+                    margin-left: 15px;
+                    flex-direction: column;
+                }
+
+                .size{
+                    font: 11px;
+                    color: #404040;
+                }
+    
+                .fa-check{
+                    color: #307474;
+                    font-size: 16px;
+                }
+            }
+
+        
+           
+        }
+    }
+}
+

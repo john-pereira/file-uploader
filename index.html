@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload with Progress Bar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-XXXXXX" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/2d2b524b0f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>File Uploader Javascript</h1>
+        </header>
+        <form action="#">
+            <input type="file" name="" class="file-input" id="file-input" hidden>
+
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+        </form>
+        <section class="progress-area">
+            <li class="row">
+
+                <i class="fas fa-file-alt"></i>
+                <div class="content">
+                    <div class="details">
+                        <span class="name">img-01.png * Uploading</span>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+            </li>
+            
+        </section>
+        <section class="uploaded-area">
+            <li class="row">
+                <div class="content">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="details">
+                        <span class="name">img-01.png * Uploaded</span>
+                        <span class="size">70 kb</span>
+                    </div>
+                </div>
+                <i class="fas fa-check"></i>
+            </li>
+            <li class="row">
+                <div class="content">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="details">
+                        <span class="name">img-01.png * Uploaded</span>
+                        <span class="size">70 kb</span>
+                    </div>
+                </div>
+                <i class="fas fa-check"></i>
+            </li><li class="row">
+                <div class="content">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="details">
+                        <span class="name">img-01.png * Uploaded</span>
+                        <span class="size">70 kb</span>
+                    </div>
+                </div>
+                <i class="fas fa-check"></i>
+            </li><li class="row">
+                <div class="content">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="details">
+                        <span class="name">img-01.png * Uploaded</span>
+                        <span class="size">70 kb</span>
+                    </div>
+                </div>
+                <i class="fas fa-check"></i>
+            </li>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
